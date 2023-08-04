@@ -67,7 +67,7 @@ function Contact() {
                 <label>Message</label>
                 <textarea placeholder='Enter your message' className='input-message' name='message' value={message} onChange={(e) => setMessage(e.target.value)} required />
             </div>
-            <button className='contact-button' type="submit">Enviar</button>
+            <button className='contact-button' type="submit">Send</button>
             </form>
         </div>
         <div className="image-container">
