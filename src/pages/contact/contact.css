@@ -1,0 +1,228 @@
+.contact-container{
+    background: rgb(9,9,121);
+    background: linear-gradient(156deg, rgba(9,9,121,1) 6%, rgba(122,48,108,1) 70%, rgba(170,54,124,0.8240546218487395) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 500px;
+    padding: 6rem;
+
+
+}
+
+.image-container {
+    display: flex;
+    margin-top: 5.75rem;
+    margin-left: 6rem; /* Posiciona a imagem no final vertical */
+    /* Alinha a imagem horizontalmente */
+  }
+
+.image-container img{
+    width: 420px;
+    height: 600px ;
+
+}
+
+.contact-form-container{
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container h1{
+    font-family: var(--font-family);
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.name-email-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.conj-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.conj-form label{
+    font-family: var(--font-family);
+    color: white;
+    padding-bottom: 0.5rem;
+    font-size: 18px;
+}
+
+.conj-form input{
+    width: 260px;
+    height: 40px;
+    border-radius: 18px;
+    background-color: transparent;
+    border: 2px solid white;
+    font-family: var(--font-family);
+    font-size: 17px;
+    color: white;
+    padding-left: 0.8rem;
+}
+
+.conj-form input::placeholder, .input-message::placeholder{
+    color: rgb(255, 255, 255, 0.8);
+}
+
+
+.input-message{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 560px;
+    height: 150px;
+    margin-bottom: 2rem;
+    resize: none;
+    padding: 0.8rem;
+    font-family: var(--font-family);
+    font-size: 17px;
+    color: white;
+}
+
+.contact-button{
+    width: 180px;
+    height: 40px;
+    font-family: var(--font-family);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+
+
+}
+
+.contact-button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* contact.css (ou adicione essas classes no seu CSS existente) */
+
+/* Estilos para o modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .conj-accept{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #3bb778;
+    padding: 0.7rem;
+  }
+  
+  .modal h2 {
+    margin-bottom: 10px;
+    font-family: var(--font-family);
+  }
+  
+  .modal button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #007bff;
+    font-family: var(--font-family);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+
+
+@media screen and (max-width: 1206px){
+    .conj-form input{
+        width: 240px;
+    }
+    .input-message{
+        width: 520px;
+    }
+    .image-container{
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 1092px){
+    .image-container{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    .conj-form input{
+        width: 200px;
+    }
+    .input-message{
+        width: 440px;
+    }
+    
+}
+
+@media screen and (max-width: 553px){
+    .name-email-container{
+        flex-direction: column;
+    }
+    .conj-form input{
+        width: 250px;
+    }
+    .input-message{
+        width: 240px;
+    }
+    .contact-form-container h1{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 358px){
+    .name-email-container{
+        flex-direction: column;
+    }
+    .conj-form input{
+        width: 190px;
+    }
+    .input-message{
+        width: 180px;
+    }
+    .contact-form-container h1{
+        font-size: 33px;
+    }
+}

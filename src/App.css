@@ -6,6 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+html,body{
+/*Limitar o eixo y*/
+  overflow-x: hidden; /*Limitar o eixo x*/
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

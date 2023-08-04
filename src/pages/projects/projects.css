@@ -1,0 +1,98 @@
+.projects-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;                                                                                                                                                     
+    background-color: #E2E6EC;
+}
+
+.projects-area{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 2rem;
+}
+
+.conj-title-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conj-title-projects span{  
+    font-family: var(--font-family);
+    margin-top: 2rem;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.conj-title-projects div{
+    width: 180px;
+    height: 6px;
+    background: linear-gradient(153deg, rgba(0,52,139,1) 0%, rgba(233,57,151,1) 100%);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    margin-top: 0.5rem;
+}
+
+
+.projects-gratitude{
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-family);
+    font-size: 17px;
+}
+
+@media screen and (max-width: 970px){
+
+    .projects-gratitude{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .projects-gratitude{
+        font-size: 13px;
+    }
+    .conj-title-projects span{  
+        font-size: 32px
+    }
+    .conj-title-projects div{
+        width: 160px;
+        height: 6px;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+
+    .projects-gratitude{
+        font-size: 13px;
+    }
+    .conj-title-projects span{  
+        font-size: 30px
+    }
+    .conj-title-projects div{
+        width: 140px;
+        height: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+
+    .projects-gratitude{
+        font-size: 12px;
+    }
+    .conj-title-projects span{  
+        font-size: 28px
+    }
+    .conj-title-projects div{
+        width: 120px;
+        height: 5px;
+    }
+    
+}
