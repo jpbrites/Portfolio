@@ -15,7 +15,7 @@ function Principal() {
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const typingSpeed = 55; // Velocidade da digitação em milissegundos
 
-  const phrase = "Hi, I'm João Paulo Brites Leopoldoo";
+  const phrase = "Hi, I'm João Paulo Brites Leopoldo";
   const cursor = "|";
 
   useEffect(() => {
