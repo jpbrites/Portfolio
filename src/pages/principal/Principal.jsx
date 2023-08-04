@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import './principal.css'
-import painel from '../../assets/painel.png'
-import moldura from '../../assets/moldura.png'
 import man from '../../assets/teste.png'
 import { Navbar } from '../../components'
-import particlesJS from 'particles.js';
 import { AiOutlineHtml5 } from 'react-icons/ai';
 import { RiFlutterFill } from 'react-icons/ri';
 import { GrReactjs } from 'react-icons/gr';
 import { FaNodeJs } from 'react-icons/fa';
-import axios from 'axios'
+
 
 
 
@@ -18,7 +15,7 @@ function Principal() {
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const typingSpeed = 55; // Velocidade da digitação em milissegundos
 
-  const phrase = "Hi, I'm João Paulo Brites Leopoldo";
+  const phrase = "Hi, I'm João Paulo Brites Leopoldoo";
   const cursor = "|";
 
   useEffect(() => {

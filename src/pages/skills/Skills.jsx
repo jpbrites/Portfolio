@@ -1,6 +1,6 @@
 import React from 'react'
 import './skills.css'
-import { Feature, ProgressBar } from '../../components'
+import { ProgressBar } from '../../components'
 
 function Skills() {
 
