@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import foto from '../../assets/foto-contact2.png';
 import './contact.css'
 import emailjs from 'emailjs-com';
 import { BsCheck2 } from "react-icons/bs";
+import { useInView } from "react-intersection-observer";
 
 function Contact() {
   
@@ -11,6 +12,10 @@ function Contact() {
     const [message, setMessage] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false);
     
+    const [ref, inView] = useInView({
+      triggerOnce: true, // A animação só acontecerá uma vez
+      threshold: 0.1, // Define a porcentagem de visibilidade do elemento para ativar a animação
+    });
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -45,7 +50,7 @@ function Contact() {
       };
   return (
     <div className='contact-container'>
-        <div className='contact-form-container'>
+        <div ref={ref} className={`contact-form-container ${inView ? "animate" : ""}`}>
             <h1>Contact me</h1>
             <form onSubmit={handleSubmit} className='contact-form'>
             <div className='name-email-container'>
