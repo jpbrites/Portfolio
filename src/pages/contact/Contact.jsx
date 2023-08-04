@@ -79,7 +79,7 @@ function Contact() {
             <div className='conj-accept'>
               <BsCheck2 style={{color: 'white'}} size={27}/>
             </div>
-            <h2>E-mail enviado com sucesso!</h2>
+            <h2>Email sent successfully!</h2>
             <button onClick={closeModal}>OK</button>
           </div>
         </div>
