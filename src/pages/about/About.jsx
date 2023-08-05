@@ -27,7 +27,7 @@ function About() {
           <a href="https://www.instagram.com/jpbrites21/" target="_blank" class="icon icon--instagram" onMouseEnter={() => setCorIconeInsta('white')} onMouseLeave={() => setCorIconeInsta('#00334D')}>
             <i class="ri-instagram-line"><AiOutlineInstagram id='icon-insta-res' color={corIconeInsta} size={33} /></i>
           </a>
-          <a href="#" class="icon icon--whatsapp" onMouseEnter={() => setCorIconeWhats('white')} onMouseLeave={() => setCorIconeWhats('#00334D')}>
+          <a href="https://wa.me/5574999377588" target="_blank"  class="icon icon--whatsapp" onMouseEnter={() => setCorIconeWhats('white')} onMouseLeave={() => setCorIconeWhats('#00334D')}>
             <i class="ri-whatsapp-line"><BsWhatsapp id='icon-whats-res' color={corIconeWhats} size={27} /></i>
           </a>
           <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-b-689399119/" target="_blank" class="icon icon--linkedin" onMouseEnter={() => setCorIconeLink('white')} onMouseLeave={() => setCorIconeLink('#00334D')}>
