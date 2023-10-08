@@ -31,14 +31,15 @@
 
 
 
-.skill-bars{
+.skill-area{
+
     margin-right: 3rem;
     margin-left: 3rem;
-    margin-top: 4rem;
-    margin-bottom: 8rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 4rem;
+    column-gap: 5rem;
     row-gap: 5rem;
     justify-content: center;
 }
@@ -47,7 +48,7 @@
 
 @media screen and (max-width: 936px){
 
-    .skill-bars{
+    .skill-area{
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
         justify-content: center;

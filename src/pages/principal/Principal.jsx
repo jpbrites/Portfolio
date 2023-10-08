@@ -13,6 +13,7 @@ import { FaNodeJs } from 'react-icons/fa';
 function Principal() {
   const [text, setText] = useState('');
   const [isTypingComplete, setIsTypingComplete] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
   const typingSpeed = 55; // Velocidade da digitação em milissegundos
 
   const phrase = "Hi, I'm João Paulo Brites Leopoldo";
@@ -40,6 +41,27 @@ function Principal() {
     }
   };
 
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    const scrollThreshold = 600; // Ponto em que você deseja aplicar o estilo
+
+    if (scrollY >= scrollThreshold) {
+      setHasScrolled(true);
+    } else {
+      setHasScrolled(false);
+    }
+  };
+
+  // Adicionar um ouvinte de rolagem quando o componente montar
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    
+    // Limpar o ouvinte de rolagem quando o componente desmontar
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
 
   return (
     <>
@@ -65,23 +87,11 @@ function Principal() {
         </div>
         <div class="custom-shape-divider-top-1690236305">
           <div class="photo-frame">
-            <div class="logo-container top-left">
-             <AiOutlineHtml5 color='#E5532D' size={34} className='icone'/>
-            </div>
-            <div class="logo-container bottom-left">
-              <GrReactjs color='#08ddff' size={34} className='icone'/>
-            </div>
-            <div class="logo-container top-right">
-              <FaNodeJs color='#94c745' size={34} className='icone'/>
-            </div>
-            <div class="logo-container bottom-right">
-              <RiFlutterFill color='#0b5d9f' size={34} className='icone'/>
-            </div>
             <img src={man} alt="My Photo" />
           </div>
         </div>
       </div>
-      <div class="custom-shape-divider-bottom-1690471646">
+      <div style={{zIndex: hasScrolled ? '997' : '996'}} class="custom-shape-divider-bottom-1690471646">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
         </svg>
