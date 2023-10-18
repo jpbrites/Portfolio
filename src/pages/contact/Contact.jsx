@@ -71,7 +71,7 @@ function Contact() {
             </form>
         </div>
         <div className="image-container">
-            <img src={foto} alt="Foto" />
+            <img loading='lazy' src={foto} alt="Foto" />
         </div>
         {isModalOpen && (
         <div className="modal-overlay">

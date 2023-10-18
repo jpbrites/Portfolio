@@ -14,6 +14,7 @@ function Skills() {
 
   
   return (
+    
     <>
     <div class = "skills">
       <div class = "title-skills">
@@ -35,6 +36,7 @@ function Skills() {
     </div>
     
     </>
+    
   )
 }
 

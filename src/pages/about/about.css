@@ -157,19 +157,29 @@
 
 @media screen and (max-width: 682px){ 
     .container-about img{
-        width: 500px;
+        width: 550px;
+        height: 450px;
     }
 }
 
-@media screen and (max-width: 581px){ 
+@media screen and (max-width: 632px){ 
     .container-about img{
-        width: 400px;
+        width: 430px;
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 513px){ 
+    .container-about img{
+        width: 380px;
+        height: 290px;
     }
 }
     
 @media screen and (max-width: 480px){ 
     .container-about img{
         width: 300px;
+        height: 270px;
     }
     .content-about-name{
         font-size: 16px;
@@ -204,7 +214,8 @@
         align-items: center;
     } 
     .container-about img{
-        width: 250px;
+        width: 240px;
+        height: 220px;
     }
     .icon {
         width: 40px;
