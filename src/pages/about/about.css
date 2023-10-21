@@ -5,12 +5,14 @@
 	background-color: WHITE;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    z-index: 999;
 }
 
 .container-about img{
     height: 520px;
     width: 700px;
     margin: 2rem;
+    border-radius: 10px;
 
 }
 

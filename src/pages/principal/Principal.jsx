@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './principal.css'
-import man from '../../assets/teste.png'
+import man from '../../assets/yo2.png'
 import { Navbar } from '../../components'
-import { AiOutlineHtml5 } from 'react-icons/ai';
-import { RiFlutterFill } from 'react-icons/ri';
-import { GrReactjs } from 'react-icons/gr';
-import { FaNodeJs } from 'react-icons/fa';
+
 
 
 
@@ -43,7 +40,7 @@ function Principal() {
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
-    const scrollThreshold = 180; // Ponto em que você deseja aplicar o estilo
+    const scrollThreshold = 600; // Ponto em que você deseja aplicar o estilo
 
     if (scrollY >= scrollThreshold) {
       setHasScrolled(true);
@@ -65,7 +62,7 @@ function Principal() {
 
   return (
     <>
-    <div className='container' /* style={{backgroundImage: `url(${painel})`,}}*/>
+    <div className='container'>
       <Navbar/>
       <div className='flex-row'>
         <div className='header-content'>
@@ -86,12 +83,10 @@ function Principal() {
           </div>
         </div>
         <div class="custom-shape-divider-top-1690236305">
-          <div class="photo-frame">
             <img loading='lazy' src={man} alt="My Photo" />
-          </div>
         </div>
       </div>
-      <div style={{zIndex: hasScrolled ? '997' : '996', fill: hasScrolled ? 'white' : 'rgb(255, 255, 255, 0.6)'}} class="custom-shape-divider-bottom-1690471646">
+      <div style={{zIndex: hasScrolled ? '997' : '996', fill: hasScrolled ? 'white' : 'rgb(255, 255, 255, 0.3)'}} class="custom-shape-divider-bottom-1690471646">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
         </svg>
