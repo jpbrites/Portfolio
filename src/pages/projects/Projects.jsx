@@ -7,6 +7,7 @@ import projeto3 from '../../assets/batman.png'
 import projeto4 from '../../assets/starbucks.png'
 import projeto5 from '../../assets/nuceu.png'
 import projeto6 from '../../assets/escola-verde.png'
+import projeto7 from '../../assets/youtube.png'
 
 function Projects() {
   return (
@@ -18,6 +19,7 @@ function Projects() {
         <div className='projects-area'>
             <ProjectCard title={'PRPPG'} description={'A project management system for the Office of Research of UNIVASF'} imgUrl={projeto1} link={'https://github.com/jpbrites/PRPPG'}/>
             <ProjectCard title={'MELOGRANO'} description={'A college project that simulates a food delivery system'} imgUrl={projeto2} link={'https://github.com/rodrigo-barboza/melograno'}/>
+            <ProjectCard title={'YOUTUBE'} description={'A personal project that involves creating a copy of YouTube'} imgUrl={projeto7} link={'https://github.com/jpbrites/youtube-project-front'}/>
             <ProjectCard title={'THE BATMAN'} description={'Just a personal project to practice front-end development'} imgUrl={projeto3} link={'https://github.com/jpbrites/The-batman'}/>
             <ProjectCard title={'STARBUCKS'} description={'Just a personal project to practice front-end development'} imgUrl={projeto4} link={'https://github.com/jpbrites/Stabucks'}/>
             <ProjectCard title={'NUCEU'} description={'NUCEU`s event management application'} imgUrl={projeto5} link={'https://github.com/jpbrites/Nuceu-App'}/>
