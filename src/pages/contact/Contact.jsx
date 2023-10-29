@@ -71,7 +71,6 @@ function Contact() {
             </form>
         </div>
         <div className="image-container">
-            <link rel="preload" as="image" href={foto} />
             <img loading='lazy' src={foto} alt="Foto" />
         </div>
         {isModalOpen && (

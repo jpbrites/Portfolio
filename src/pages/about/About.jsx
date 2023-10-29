@@ -18,7 +18,6 @@ function About() {
 
   return (
     <div className='container-about'>
-      <link rel="preload" as="image" href={people} />
       <img loading='lazy' src={people}></img>
       <div ref={ref}  className={`content-about ${inView ? "animate" : ""}`}>
         <Feature cor={'#00334D'} titulo={'About Me'}/>

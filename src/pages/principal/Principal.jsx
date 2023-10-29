@@ -83,7 +83,6 @@ function Principal() {
           </div>
         </div>
         <div class="custom-shape-divider-top-1690236305">
-            <link rel="preload" as="image" href={man} />
             <img loading='lazy' src={man} alt="My Photo" />
         </div>
       </div>
