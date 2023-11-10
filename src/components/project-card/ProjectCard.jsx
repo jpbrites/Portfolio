@@ -5,7 +5,7 @@ import { HiOutlineExternalLink } from 'react-icons/hi';
 function ProjectCard({ title, description, imgUrl, link }) {
   return (
     <div className='project-card'>
-        <img src={imgUrl} className='project-image'></img>
+        <div style={{backgroundImage: `url(${imgUrl})`}} className='project-image'></div>
         <div className='project-modal'>
             <span className='project-subtitle'>{title}</span>
             <h2 className='project-title'>{description}</h2>

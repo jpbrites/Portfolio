@@ -11,7 +11,10 @@
 .project-image{
     width: 100%;
     height: 100%;
-    transform: scale(1);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 .project-modal{
