@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './principal.css'
-import man from '../../assets/yo2.png'
+import man from '../../assets/yo4.png'
 import { Navbar } from '../../components'
 
 

@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react'
 import './about.css'
-import people from '../../assets/eu_about.png';
+import people from '../../assets/eu_about2.jpg';
 import { Feature } from '../../components';
 import { AiOutlineInstagram, AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";

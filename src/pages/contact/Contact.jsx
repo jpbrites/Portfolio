@@ -1,5 +1,5 @@
 import React, {useState, useRef} from 'react'
-import foto from '../../assets/foto-contact2.png';
+import foto from '../../assets/foto-contact3.png';
 import './contact.css'
 import emailjs from 'emailjs-com';
 import { BsCheck2 } from "react-icons/bs";
