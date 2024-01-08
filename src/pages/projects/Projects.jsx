@@ -9,6 +9,7 @@ import projeto5 from '../../assets/nuceu.png'
 import projeto6 from '../../assets/escola-verde.png'
 import projeto7 from '../../assets/youtube.png'
 import projeto8 from '../../assets/whatsapp.png'
+import projeto9 from '../../assets/weather.png'
 
 function Projects() {
   return (
@@ -22,6 +23,7 @@ function Projects() {
             <ProjectCard title={'WHATSAPP'} description={'A personal project that involves creating a basic copy of Whatsapp'} imgUrl={projeto8} link={'https://github.com/jpbrites/Whatsapp-front'}/>
             <ProjectCard title={'YOUTUBE'} description={'A personal project that involves creating a basic copy of YouTube'} imgUrl={projeto7} link={'https://github.com/jpbrites/youtube-project-front'}/>
             <ProjectCard title={'MELOGRANO'} description={'A college project that simulates a food delivery system'} imgUrl={projeto2} link={'https://github.com/rodrigo-barboza/melograno'}/>
+            <ProjectCard title={'WEATHER'} description={'A project that displays the weather and forecast for a city using the WeatherAPI'} imgUrl={projeto9} link={'https://github.com/jpbrites/Weather'}/>
             <ProjectCard title={'THE BATMAN'} description={'Just a personal project to practice front-end development'} imgUrl={projeto3} link={'https://github.com/jpbrites/The-batman'}/>
             <ProjectCard title={'STARBUCKS'} description={'Just a personal project to practice front-end development'} imgUrl={projeto4} link={'https://github.com/jpbrites/Stabucks'}/>
             <ProjectCard title={'NUCEU'} description={'NUCEU`s event management application'} imgUrl={projeto5} link={'https://github.com/jpbrites/Nuceu-App'}/>
