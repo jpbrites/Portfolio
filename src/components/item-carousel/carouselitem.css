@@ -1,0 +1,427 @@
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+   
+    
+    
+  }
+
+  .conj-moldura-projects{
+    position: relative;
+   
+  }
+
+  .conj-moldura-projects div{
+    position: absolute;
+    top: 56px; /* Ajuste conforme necessário */
+    right: 41px; /* Ajuste conforme necessário */
+    width: calc(100% - 60px); /* Subtrai 20px para dar o efeito de uma moldura cortada */
+    height: calc(100% - 40px); /* Subtrai 20px para dar o efeito de uma moldura cortada */
+    background: linear-gradient(163deg, rgba(12,27,51,1) 0%, rgba(9,9,121,1) 50%, rgba(122,48,108,1) 100%);
+    z-index: -1; /* Coloca a moldura atrás da imagem */
+ 
+
+  }
+  .conj-carousel{
+    margin: 40px 0 40px 0;
+    padding: 0 20px 0 25px;
+    
+  }
+
+  .conj-carousel h1{
+    font-family: var(--font-family);
+    color: rgba(233,57,151,1);
+    font-style: italic;
+    font-size: 35px;
+  }
+  .carousel-item-text {
+    font-family: var(--font-family);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    white-space: normal;
+    color: #00334D;
+  }
+
+  .conj-technologies{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+
+  .conj-technologies span{
+    font-family: var(--font-family);
+    font-size: 21px;
+    color: #00334D;
+    font-weight: 600;
+  }
+
+  .conj-technologies div{
+    margin-left: 0.8rem;
+    display: flex;
+    
+  }
+
+  .conj-technologies div > *:not(:first-child){
+    margin-left: 10px;
+    
+  }
+
+  .button-link{
+    width: 180px;
+    height: 45px;
+    margin-top: 2rem;
+    font-family: var(--font-family);
+    font-weight: 600;
+    background-color: transparent;
+    border: 3px solid #00334D;
+    border-radius: 15px;
+    color: #00334D;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+  }
+  .carousel-img {
+    
+    width: 700px;
+    height: 430px;
+    padding: 0 20px 0 40px;
+
+  }
+
+  .icon-tech{
+    color: #00334D;
+  }
+
+  @media screen and (max-width: 1330px){
+
+    .carousel-img {
+    
+      width: 650px;
+      height: 380px;
+    }
+
+    .conj-carousel h1{
+      font-size: 32px;
+    }
+    .carousel-item-text {
+      font-size: 1.3rem;
+    }
+
+    .conj-technologies span{
+      font-size: 19px;
+    }
+
+    .icon-tech{
+      width: 30px;
+      height: 30px;
+    }
+
+    .button-link{
+      width: 170px;
+      height: 45px;
+      font-size: 17px;
+
+    } 
+  }
+
+  @media screen and (max-width: 1166px){
+
+    .carousel-img {
+    
+      width: 570px;
+      height: 330px;
+    }
+
+    .conj-carousel h1{
+      font-size: 30px;
+    }
+    .carousel-item-text {
+      font-size: 1.2rem;
+    }
+
+    .conj-technologies span{
+      font-size: 18px;
+    }
+
+    .icon-tech{
+      width: 28px;
+      height: 28px;
+    }
+
+    .button-link{
+      width: 160px;
+      height: 42px;
+      font-size: 16px;
+
+    } 
+
+    .icon-git{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1076px){
+
+    .carousel-img {
+    
+      width: 490px;
+      height: 320px;
+    }
+
+    .conj-carousel h1{
+      font-size: 28px;
+    }
+    .carousel-item-text {
+      font-size: 1.1rem;
+    }
+
+    .conj-technologies span{
+      font-size: 17px;
+    }
+
+    .icon-tech{
+      width: 26px;
+      height: 26px;
+    }
+
+    .button-link{
+      width: 140px;
+      height: 40px;
+      font-size: 15px;
+
+    } 
+
+    .icon-git{
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  @media screen and (max-width: 970px){
+
+    .carousel-img {
+    
+      width: 440px;
+      height: 290px;
+    }
+
+    .conj-carousel h1{
+      font-size: 26px;
+    }
+    .carousel-item-text {
+      font-size: 1rem;
+    }
+
+    .conj-technologies{
+      margin-top: 1.5rem;
+    }
+
+    .conj-technologies span{
+      font-size: 16px;
+    }
+
+    .icon-tech{
+      width: 25px;
+      height: 25px;
+    }
+
+    .button-link{
+      width: 130px;
+      height: 40px;
+      font-size: 14px;
+      margin-top: 1.5rem;
+
+    } 
+
+    .icon-git{
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+    @media screen and (max-width: 872px){
+
+      .carousel-item {
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-bottom: 3rem;      }
+
+      .conj-carousel {
+        order: 1;
+      }
+
+      .conj-moldura-projects{
+        order: 2;
+      }
+
+    .carousel-img {
+    
+      width: 440px;
+      height: 290px;
+    }
+
+    .conj-carousel h1{
+      font-size: 28px;
+    }
+    .carousel-item-text {
+      font-size: 1.1rem;
+    }
+
+    .conj-technologies{
+      margin-top: 1.5rem;
+    }
+
+    .conj-technologies span{
+      font-size: 18px;
+    }
+
+    .icon-tech{
+      width: 27px;
+      height: 27px;
+    }
+
+    .button-link{
+      width: 160px;
+      height: 40px;
+      font-size: 16px;
+      margin-top: 1.5rem;
+
+    } 
+
+    .icon-git{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media screen and (max-width: 533px){
+
+    .carousel-item {
+      margin-top: 0rem;
+      margin-bottom: 2rem;
+    }
+
+
+  .carousel-img {
+  
+    width: 370px;
+    height: 240px;
+  }
+
+  .conj-carousel h1{
+    font-size: 25px;
+  }
+  .carousel-item-text {
+    font-size: 0.9rem;
+  }
+
+  .conj-technologies span{
+    font-size: 16px;
+  }
+
+  .icon-tech{
+    width: 23px;
+    height: 23px;
+  }
+
+  .button-link{
+    width: 135px;
+    height: 35px;
+    font-size: 14px;
+    margin-top: 1.5rem;
+
+  } 
+
+  .icon-git{
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 445px){
+
+.carousel-img {
+
+  width: 330px;
+  height: 210px;
+}
+
+.conj-carousel h1{
+  font-size: 24px;
+}
+.carousel-item-text {
+  font-size: 0.8rem;
+}
+
+.conj-technologies span{
+  font-size: 14px;
+}
+
+.icon-tech{
+  width: 21px;
+  height: 21px;
+}
+
+.button-link{
+  width: 130px;
+  height: 32px;
+  font-size: 13px;
+  margin-top: 1.5rem;
+
+} 
+
+.icon-git{
+  width: 17px;
+  height: 17px;
+}
+}
+
+@media screen and (max-width: 379px){
+
+  .carousel-img {
+  
+    width: 240px;
+    height: 160px;
+  }
+  
+  .conj-carousel h1{
+    font-size: 24px;
+  }
+  .carousel-item-text {
+    font-size: 0.8rem;
+  }
+  
+  .conj-technologies span{
+    font-size: 13px;
+  }
+  
+  .icon-tech{
+    width: 19px;
+    height: 19px;
+  }
+  
+  .button-link{
+    width: 110px;
+    height: 28px;
+    font-size: 11px;
+    margin-top: 1.5rem;
+  
+  } 
+  
+  .icon-git{
+    width: 16px;
+    height: 16px;
+  }
+  }
+  
+    

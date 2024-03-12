@@ -1,15 +1,20 @@
+
+
 .container {
   width: 100%;
-  height: auto;
+  height: 100vh;
   background: linear-gradient(163deg, rgba(12,27,51,1) 0%, rgba(9,9,121,1) 50%, rgba(122,48,108,1) 100%);
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
   }
 
   .flex-row{
+    height: 100%;
     display: grid;
+    position: relative;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define o tamanho das colunas e a quebra para a próxima linha */
-  
   justify-content: center; /* Centraliza os itens horizontalmente */
 
   }
@@ -74,42 +79,23 @@
 /*
 /*MODELO 1*/
 .custom-shape-divider-top-1690236305 {
-    margin-bottom: 0.05rem;
-    margin-left: 8rem;
-    margin-right: 2rem;
-    box-sizing: border-box;
-    height: 600px;
-    z-index: 997;
-    animation: fadeInFromBottom 1s ease-in-out;
-    display: flex;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: -9.1rem;
+  z-index: 997;
+}
+
+.custom-shape-divider-top-1690236305 img {
+  width: 80%; /* Ajuste a largura conforme desejado */
+  height: auto; /* Mantém a proporção */
 }
 
 .animation{
   animation: fadeInFromBottom 1s ease-in-out;
 }
 
-.photo-frame {
-  position: absolute;
-  width: 450px;
-  height: 600px;
-  border: 1px solid rgb(255, 255, 255, 0.6); /* Espessura da moldura branca */
-   /* Removendo a parte de baixo da moldura */
-   border-bottom: none;
-  background-color: transparent; /* Cor da moldura branca */
-  overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites da moldura */
-  display: flex;
-}
 
-.photo-frame img {
-  position: absolute;
-  left: -19%;
-  top: -27%;
-  width: 610px;
-  height: 940px;
-
- /* Faz a foto preencher todo o espaço da moldura mantendo a proporção */
-  
-}
 
 .logo-container {
   position: absolute;
@@ -144,16 +130,14 @@
 }
 .custom-shape-divider-bottom-1690471646 {
   z-index: 996;
-  position: relative;
-
-
+  position: absolute;
   width: 100%;
+  bottom: 0;
 
 }
 
 .custom-shape-divider-bottom-1690471646 svg {
-  position: absolute;
-  bottom: 0;
+
   display: block;
   width: calc(129% + 1.3px);
   height: 150px;
@@ -198,12 +182,21 @@
   .flex-row{
     grid-template-columns: 1fr;
   }
-  .custom-shape-divider-top-1690236305{
-    margin-left: 8rem;
-    margin-top: 2rem;
-  }
+
   .header-content{
     margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .custom-shape-divider-top-1690236305 {
+    width: 500px; /* Tamanho da imagem em telas menores */
+    height: auto; /* Altura automática */
+  }
+
+  .custom-shape-divider-top-1690236305 img {
+    width: 100%; /* Ajuste o tamanho da imagem para preencher a largura */
+    height: auto; /* Altura automática */
   }
 }
 @media screen and (max-width: 596px){
@@ -227,14 +220,7 @@
 
   }
 
-  .custom-shape-divider-top-1690236305{
-    
-    margin-left: 5rem;
-  }
-  .custom-shape-divider-top-1690236305 img{
-    width: 450px;
-    height: 590px;
-  }
+
 
 }
 

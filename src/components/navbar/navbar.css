@@ -3,14 +3,15 @@
     align-items: center;
     padding: 2rem 8rem;
     padding-top: 1.5rem;
-
+    z-index: 998;
+    
 }
 
 .navbar-links{
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .navbar-links-logo{

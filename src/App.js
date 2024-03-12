@@ -2,12 +2,15 @@
 import './App.css';
 import { About, Contact, Footer, Projects, Skills } from './pages';
 import Principal from './pages/principal/Principal';
+import man from './assets/yo4.png'
+
 
 function App() {
   return (
     <>
     <div id='home'>
       <Principal/>
+      
     </div>
 
     <div id='about'>

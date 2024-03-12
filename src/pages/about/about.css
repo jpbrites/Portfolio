@@ -13,7 +13,7 @@
     width: 700px;
     margin: 2rem;
     border-radius: 10px;
-
+    order: 1;
 }
 
 .content-about{
@@ -23,6 +23,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    order: 2;
 	
 }
 
