@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import './principal.css'
 import man from '../../assets/yo4.png'
 import { Navbar } from '../../components'
+import curriculo from '../../../src/cur_new.pdf';
+
 
 function Principal() {
   const [text, setText] = useState('');
@@ -55,6 +57,18 @@ function Principal() {
     };
   }, []);
 
+  const handleDownloadCV = () => {
+    // Cria um link temporário para o arquivo do currículo
+    const link = document.createElement('a');
+    link.href = curriculo;
+    link.target = '_blank';
+    link.download = 'curriculo_new.pdf'; // O nome que o arquivo terá ao ser baixado
+    link.click();
+
+    // Remover o link temporário
+    URL.revokeObjectURL(link.href);
+  };
+
 
   return (
     <>
@@ -74,7 +88,7 @@ function Principal() {
             <p className='line-about'>I'm a dedicated computer engineering student specializing in full stack development.<br/> With a keen eye for detail and a passion for coding, I strive to deliver exceptional digital solutions.</p>
             <div className='buttons-home'>
               <button onClick={() => handleNavLinkClick('about')} className='button-about'>About me</button>
-              <button onClick={() => handleNavLinkClick('contact')} className='button-contact' >Let's talk</button>
+              <button onClick={() => handleDownloadCV()} className='button-contact' >Download CV</button>
             </div>
           </div>
         </div>

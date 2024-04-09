@@ -13,10 +13,11 @@ import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
 import CarouselItem from '../../components/item-carousel/CarouselItem'
 import { MdOutlineRadioButtonChecked } from "react-icons/md";
-import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaPython } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaPython, FaWordpress } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { GrMysql } from "react-icons/gr";
-import { SiDjango, SiPostgresql } from "react-icons/si";
+import { SiDjango, SiPostgresql, SiDart, SiFirebase, SiTypescript } from "react-icons/si";
+import { RiFlutterFill } from "react-icons/ri";
 
 
 function Projects() {
@@ -28,6 +29,7 @@ function Projects() {
         "This is a project for a comprehensive system for managing the Research Pro-Rectorate of UNIVASF. The aim of this system is to register students and researchers/professors to organize the projects and calls for proposals that will be published, as well as the evaluations.",
       icon: projeto1,
       tech: [FaReact, FaHtml5, FaCss3Alt, IoLogoJavascript, FaNodeJs, GrMysql],
+      link: 'https://github.com/jpbrites/PRPPG'
     },
     {
       title: "MELOGRANO",
@@ -40,38 +42,42 @@ function Projects() {
     },
     {
       title: "THE BATMAN",
-      description:
-        "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
+      description: "This project was one of the first ones I developed, and my goal with it was merely an introduction to my front-end skills. It's a 'Batman' website designed solely to promote the new movie. It features a main area, contacts, photos, and comments.",
       icon: projeto3,
-      tech: [FaHtml5, FaCss3Alt, FaReact]
+      tech: [FaHtml5, FaCss3Alt],
+      link: 'https://github.com/jpbrites/The-batman'
     },
     {
       title: "STARBUCKS",
-      description:
-        "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
+      description:"This project was also one of the ones I developed early on in my learning journey in development. It's a very simple 'Starbucks' website featuring only the main screen displaying the product, description, and contact icons.",
       icon: projeto4,
-      tech: [FaHtml5, FaCss3Alt, FaReact]
+      tech: [FaHtml5, FaCss3Alt],
+      link: 'https://github.com/jpbrites/Stabucks'
+
     },
     {
       title: "NUCEU",
-      description:
-        "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
+      description: "The NUCEU was a project for the Software Engineering course at the university, aiming to develop an application to manage the promotion of events and psychological counseling sessions at the Student Care Center, as well as to promote the center itself.",
       icon: projeto5,
-      tech: [FaHtml5, FaCss3Alt, FaReact]
+      tech: [SiDart, RiFlutterFill, SiFirebase],
+      link: 'https://github.com/jpbrites/Nuceu-App'
+
     },
     {
       title: "ESCOLA VERDE",
-      description:
-        "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
+      description:"The 'Escola Verde - Mobile' was a project for the Thematic Core course at the university. It involved developing an application to promote the activities, events, news, and contacts of the Green School Project at my university.",
       icon: projeto6,
-      tech: [FaHtml5, FaCss3Alt, FaReact]
+      tech: [SiDart, RiFlutterFill, FaWordpress],
+      link: 'https://github.com/pcgomesp/escola_verde_mobile'
+
     },
     {
       title: "YOUTUBE",
-      description:
-        "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
+      description:"In this project, I aimed to create a sort of 'replica' of YouTube, where I utilize the YouTube API for its development. Thus, it includes a main page loaded with currently trending videos, as well as search and login systems.",    
       icon: projeto7,
-      tech: [FaHtml5, FaCss3Alt, FaReact]
+      tech: [FaHtml5, FaCss3Alt, SiTypescript, FaReact, FaNodeJs, GrMysql],
+      link: 'https://github.com/jpbrites/youtube-project-front'
+
     },
     {
       title: "WHATSAPP",
@@ -98,26 +104,6 @@ function Projects() {
     setActiveIndex(newIndex);
   };
   return (
-    /*
-    <div className='projects-container'>
-        <div className='conj-title-projects'>
-          <span>My Projects</span>
-          <div></div>
-        </div>
-        <div className='projects-area'>
-            <ProjectCard title={'PRPPG'} description={'A project management system for the Office of Research of UNIVASF'} imgUrl={projeto1} link={'https://github.com/jpbrites/PRPPG'}/>
-            <ProjectCard title={'WHATSAPP'} description={'A personal project that involves creating a basic copy of Whatsapp'} imgUrl={projeto8} link={'https://github.com/jpbrites/Whatsapp-front'}/>
-            <ProjectCard title={'YOUTUBE'} description={'A personal project that involves creating a basic copy of YouTube'} imgUrl={projeto7} link={'https://github.com/jpbrites/youtube-project-front'}/>
-            <ProjectCard title={'MELOGRANO'} description={'A college project that simulates a food delivery system'} imgUrl={projeto2} link={'https://github.com/rodrigo-barboza/melograno'}/>
-            <ProjectCard title={'WEATHER'} description={'A project that displays the weather and forecast for a city using the WeatherAPI'} imgUrl={projeto9} link={'https://github.com/jpbrites/Weather'}/>
-            <ProjectCard title={'THE BATMAN'} description={'Just a personal project to practice front-end development'} imgUrl={projeto3} link={'https://github.com/jpbrites/The-batman'}/>
-            <ProjectCard title={'STARBUCKS'} description={'Just a personal project to practice front-end development'} imgUrl={projeto4} link={'https://github.com/jpbrites/Stabucks'}/>
-            <ProjectCard title={'NUCEU'} description={'NUCEU`s event management application'} imgUrl={projeto5} link={'https://github.com/jpbrites/Nuceu-App'}/>
-            <ProjectCard title={'ESCOLA VERDE'} description={'Green School`s event and activity management application'} imgUrl={projeto6} link={'https://github.com/pcgomesp/escola_verde_mobile'}/>
-        </div>
-        <span className='projects-gratitude'>*I would like to express my sincere gratitude to Paulo César, Rodrigo Leandro, Francisco Luan, Eduardo de Oliveira, and Aurélio Ribeiro for their valuable contributions to the projects: 'Melograno,' 'Nuceu,' and 'Escola Verde'. Working alongside such talented individuals has been an inspiring and rewarding experience, and I am truly thankful for their involvement in making these projects successful.</span>
-    </div>
-    */
     <div className="carousel">
       <div className='conj-projects-title'>
         <span className='title-projects'>My Projects</span>
@@ -154,7 +140,6 @@ function Projects() {
                 updateIndex(index);
               }}
             >
-        
             </MdOutlineRadioButtonChecked>
           );
         })}
