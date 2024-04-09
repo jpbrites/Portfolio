@@ -151,6 +151,10 @@
   background: linear-gradient(135deg, #F25425, #FF7667, #A55EFF, #21BEFE, #12D187);
 }
 
+.card-header.eleven{
+  background: linear-gradient(135deg, #c1bdbc, #1d1b1b);
+}
+
 @media screen and (max-width: 479px){
   .title-skills{
     font-size: 35px;

@@ -10,6 +10,7 @@ import { FaPhp } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import { FaAngular } from "react-icons/fa";
 import { SiDart } from "react-icons/si";
+import { TbBrandThreejs } from "react-icons/tb";
 
 
 import man from '../../assets/computer.png'
@@ -18,29 +19,6 @@ function Skills() {
 
   
   return (
-    /*
-    <>
-    <div class = "skills">
-      <div class = "title-skills">
-        <span>My Skills</span>
-        <div></div>
-      </div>
-      <div className='skill-area'>
-        <SkillElement icon={AiOutlineHtml5} name={'HTML'}/>
-        <SkillElement icon={DiCss3} name={'CSS'}/>
-        <SkillElement icon={IoLogoJavascript} name={'Javascript'}/>
-        <SkillElement icon={DiReact} name={'ReactJs'}/>
-        <SkillElement icon={DiNodejsSmall} name={'NodeJs'}/>
-        <SkillElement icon={RiFlutterFill} name={'Flutter'}/>
-        <SkillElement icon={BsFiletypeSql} name={'SQL'}/>
-        <SkillElement icon={FaPhp} name={'PHP'}/>
-        <SkillElement icon={BsGit} name={'Git'}/>
-        <SkillElement icon={FiFigma} name={'Figma'}/>
-      </div>
-    </div>
-    
-    </>
-    */
 
 <div className='containerr'>
 <h1 className='title-skills'>My Skills</h1>
@@ -130,6 +108,15 @@ function Skills() {
   </div>
   <div class="card-content">
     <h1 class="card-title">Figma</h1>
+   
+ </div>
+</div>
+<div class="card-wrap">
+  <div class="card-header eleven">
+    <TbBrandThreejs className='icon-skill'/>
+  </div>
+  <div class="card-content">
+    <h1 class="card-title">ThreeJs</h1>
    
  </div>
 </div>

@@ -81,17 +81,19 @@ function Projects() {
     },
     {
       title: "WHATSAPP",
-      description:
-        "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
+      description:"In this project, I aimed to explore real-time system development using websockets. So, I created a kind of 'clone' of WhatsApp, where it's possible to chat in groups with several people and also have individual conversations.",
       icon: projeto8,
-      tech: [FaHtml5, FaCss3Alt, FaReact]
+      tech: [FaHtml5, FaCss3Alt, IoLogoJavascript, FaReact, FaNodeJs],
+      link: 'https://github.com/jpbrites/Whatsapp-front'
+
     },
     {
       title: "WEATHER",
-      description:
-        "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
+      description:"This is a very simple weather project, where initially the user enters the name of the city they want to view. Then, a screen is displayed with the weather information and forecast for that particular city.",
       icon: projeto9,
-      tech: [FaHtml5, FaCss3Alt, FaReact]
+      tech: [FaHtml5, FaCss3Alt,IoLogoJavascript, FaReact],
+      link: 'https://github.com/jpbrites/Weather'
+
     },
   ];
   const updateIndex = (newIndex) => {
